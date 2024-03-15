@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Contador de Clicks</h2>
+    <button id="myButton">Haz click aquí</button>
+    <p id="clicks">Número de clicks: 0</p>
+    <script>
+      var count = 0;
+      document
+        .getElementById("myButton")
+        .addEventListener("click", function () {
+          count++;
+          document.getElementById("clicks").innerHTML =
+            "Número de clicks: " + count;
+        });
+    </script>
+  </body>
+</html>
