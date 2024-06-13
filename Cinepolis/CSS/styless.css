@@ -1,0 +1,27 @@
+.navbar-custom {
+  background-color: #4a92d1 !important;
+  color: white !important;
+}
+
+.navbar-custom .nav-link {
+  color: white !important;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #d1e7f7 !important;
+}
+
+.footer-custom {
+  background-color: #4a92d1 !important;
+  color: white !important;
+}
+
+.footer-custom h5,
+.footer-custom p,
+.footer-custom a {
+  color: white !important;
+}
+
+.footer-custom a:hover {
+  color: #d1e7f7 !important;
+}

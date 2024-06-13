@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capitán Avispa - CINEPOLIS</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .navbar-custom {
+        background-color: #05102a !important;
+        color: white !important;
+      }
+
+      .navbar-custom .nav-link {
+        color: white !important;
+      }
+
+      .navbar-custom .nav-link:hover {
+        color: #d1e7f7 !important;
+      }
+
+      .footer-custom {
+        background-color: #05102a !important;
+        color: white !important;
+      }
+
+      .footer-custom h5,
+      .footer-custom p,
+      .footer-custom a {
+        color: white !important;
+      }
+
+      .footer-custom a:hover {
+        color: #d1e7f7 !important;
+      }
+
+      .card {
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card-img-top {
+        object-fit: cover;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CINEPOLIS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Más
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Movie Details -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Capitán Avispa</h2>
+          <p>92 min · Animación</p>
+          <p><strong>Director:</strong> Alex Jones</p>
+          <p>
+            <strong>Actores:</strong> Tom Hanks, Scarlett Johansson, Chris Evans
+          </p>
+          <p>
+            Capitán Avispa es una película animada llena de aventuras donde un
+            joven héroe debe defender su ciudad de un enjambre de villanos
+            insectoides. Con la ayuda de sus amigos, Capitán Avispa aprenderá el
+            verdadero significado de la valentía.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Details -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start footer-custom">
+      <div class="container p-4"></div>
+    </footer>
+  </body>
+</html>

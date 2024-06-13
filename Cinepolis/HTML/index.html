@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEPOLIS</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .navbar-custom {
+        background-color: #05102a !important;
+        color: white !important;
+      }
+
+      .navbar-custom .nav-link {
+        color: white !important;
+      }
+
+      .navbar-custom .nav-link:hover {
+        color: #d1e7f7 !important;
+      }
+
+      .footer-custom {
+        background-color: #05102a !important;
+        color: white !important;
+      }
+
+      .footer-custom h5,
+      .footer-custom p,
+      .footer-custom a {
+        color: white !important;
+      }
+
+      .footer-custom a:hover {
+        color: #d1e7f7 !important;
+      }
+
+      .card {
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card-img-top {
+        object-fit: cover;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="#">CINEPOLIS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Películas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="accion.html">Acción</a></li>
+                <li>
+                  <a class="dropdown-item" href="comedia.html">Comedia</a>
+                </li>
+                <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                <li><a class="dropdown-item" href="terror.html">Terror</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Alimentos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tradicional.html"
+                    >Tradicional</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="vip.html">VIP</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Elige tu cine
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acámbaro</a></li>
+                <li><a class="dropdown-item" href="#">Acapulco</a></li>
+                <li><a class="dropdown-item" href="#">Acayucan</a></li>
+                <li><a class="dropdown-item" href="#">Aguascalientes</a></li>
+                <li><a class="dropdown-item" href="#">Apatzingán</a></li>
+                <li><a class="dropdown-item" href="#">Apizaco</a></li>
+                <li><a class="dropdown-item" href="#">Autlán de Navarro</a></li>
+                <li><a class="dropdown-item" href="#">Caborca</a></li>
+                <li><a class="dropdown-item" href="#">Cadereyta</a></li>
+                <li><a class="dropdown-item" href="#">Camargo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="crear_cuenta.html">Crear cuenta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./Promocion.png"
+            class="d-block w-100"
+            alt="Carousel Image 1"
+            loading="lazy"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Promicion2.png"
+            class="d-block w-100"
+            alt="Carousel Image 2"
+            loading="lazy"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Promocion3.png"
+            class="d-block w-100"
+            alt="Carousel Image 3"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel -->
+
+    <!-- Movie Cards -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="observados.html">
+              <img
+                src="https://palomaynacho-1f321.kxcdn.com/wp-content/uploads/2024/02/Poster-pelicula-Observados.jpg"
+                class="card-img-top"
+                alt="Observados"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Observados</h5>
+                <p class="card-text">102 min · Thriller</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="carnada.html">
+              <img
+                src="https://cinepolis.com/_next/image?url=https%3A%2F%2Ftickets-static-content.cinepolis.com%2Fresources%2Fmx%2Fmovies%2Fcarnada%2FPOSTER%2F720X1022%2Fcarnada.jpg&w=3840&q=75"
+                class="card-img-top"
+                alt="Carnada"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Carnada</h5>
+                <p class="card-text">86 min · Thriller</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="inmaculada.html">
+              <img
+                src="https://diamondfilms.com/img/galeria/65e61b64cd9d287e50f364a9b.jpg"
+                class="card-img-top"
+                alt="Inmaculada"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Inmaculada</h5>
+                <p class="card-text">89 min · Terror</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="un-lugar-en-silencio-dia-uno.html">
+              <img
+                src="https://www.justwatch.com/images/backdrop/312160685/s1920/a-quiet-place-day-one.webp/a-quiet-place-day-one.webp"
+                class="card-img-top"
+                alt="Un Lugar en Silencio: Día Uno"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un Lugar en Silencio: Día Uno</h5>
+                <p class="card-text">100 min · Terror</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="el-planeta-de-los-simios-nuevo-reino.html">
+              <img
+                src="https://www.blogdepelis.com/wp-content/uploads/2024/05/PLANETA1.jpg"
+                class="card-img-top"
+                alt="El Planeta de Los Simios: Nuevo Reino"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  El Planeta de Los Simios: Nuevo Reino
+                </h5>
+                <p class="card-text">
+                  145 min · Acción, Aventura, Ciencia Ficción
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="capitan-avispa.html">
+              <img
+                src="https://cinepolis.com/_next/image?url=https%3A%2F%2Ftickets-static-content.cinepolis.com%2Fresources%2Fmx%2Fmovies%2Fcapitan-avispa%2FPOSTER%2F720X1022%2Fcapitan-avispa.jpg&w=3840&q=75"
+                class="card-img-top"
+                alt="Capitán Avispa"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Capitán Avispa</h5>
+                <p class="card-text">92 min · Animación</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="un-afortunado-sonador.html">
+              <img
+                src="https://mx.web.img2.acsta.net/r_1920_1080/img/ca/80/ca800f51fa2b890f4263d526f6ffefa5.jpg"
+                class="card-img-top"
+                alt="Un Afortunado Soñador"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un Afortunado Soñador</h5>
+                <p class="card-text">100 min · Drama</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="ghost-rite-here-rite-now.html">
+              <img
+                src="https://cinepolis.com/_next/image?url=https%3A%2F%2Ftickets-static-content.cinepolis.com%2Fresources%2Fmx%2Fmovies%2Fghost-rite-here-rite-now-la-experiencia%2FPOSTER%2F720X1022%2Fghost-rite-here-rite-now-la-experiencia.jpg&w=3840&q=75"
+                class="card-img-top"
+                alt="GHOST: Rite Here Rite Now La Experiencia"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  GHOST: Rite Here Rite Now La Experiencia
+                </h5>
+                <p class="card-text">145 min · Musical</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="hachiko-una-historia-verdadera.html">
+              <img
+                src="https://cinepremiere.com.mx/wp-content/uploads/2024/05/hachiko-una-historia-verdadera-3-900x506.jpg"
+                class="card-img-top"
+                alt="Hachiko: Una Historia Verdadera"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hachiko: Una Historia Verdadera</h5>
+                <p class="card-text">120 min · Drama</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="amigos-imaginarios.html">
+              <img
+                src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2024/05/amigos-imaginarios-2024-3311263.jpg?tf=2048x"
+                class="card-img-top"
+                alt="Amigos Imaginarios"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Amigos Imaginarios</h5>
+                <p class="card-text">100 min · Familiar</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="angeles-inesperados.html">
+              <img
+                src="https://imgs.search.brave.com/hTa3N4qJ9c1iM69MlTPpX4MzfxJHVa6yzEFaDuIEHVM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/anVzdHdhdGNoLmNv/bS9pbWFnZXMvYmFj/a2Ryb3AvMzEzMDcy/MDk3L3M0ODAvb3Jk/aW5hcnktYW5nZWxz/L29yZGluYXJ5LWFu/Z2Vscw.jpeg"
+                class="card-img-top"
+                alt="Ángeles Inesperados"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ángeles Inesperados</h5>
+                <p class="card-text">118 min · Drama</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="furiosa-saga-mad-max.html">
+              <img
+                src="https://www.lavanguardia.com/andro4all/hero/2024/05/furiosa-de-la-saga-mad-max.jpeg?width=1200&aspect_ratio=16:9"
+                class="card-img-top"
+                alt="Furiosa: De la Saga Mad Max"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Furiosa: De la Saga Mad Max</h5>
+                <p class="card-text">142 min · Acción, Aventura</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="mi-nombre-era-eileen.html">
+              <img
+                src="https://media.filmelier.com/noticias/mx/2024/05/mi-nombre-era-eileen-pelicula.jpg"
+                class="card-img-top"
+                alt="Mi Nombre Era Eileen"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mi Nombre Era Eileen</h5>
+                <p class="card-text">96 min · Thriller</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="haikyu-la-batalla-del-basurero.html">
+              <img
+                src="https://cdn.alfabetajuega.com/alfabetajuega/2021/07/Capitulos-de-la-1era-temporada-de-Haikyu.jpg?width=1200"
+                class="card-img-top"
+                alt="Haikyu!! La Batalla del Basurero"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Haikyu!! La Batalla del Basurero</h5>
+                <p class="card-text">85 min · Acción, Deporte</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="sismo-magnitud-9-5.html">
+              <img
+                src="https://cinepolis.com/_next/image?url=https%3A%2F%2Ftickets-static-content.cinepolis.com%2Fresources%2Fmx%2Fmovies%2Fsismo-magnitud-95%2FPOSTER%2F720X1022%2Fsismo-magnitud-95.jpg&w=3840&q=75"
+                class="card-img-top"
+                alt="Sismo Magnitud 9.5"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sismo Magnitud 9.5</h5>
+                <p class="card-text">114 min · Acción</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="monkey-man-el-despertar-de-la-bestia.html">
+              <img
+                src="https://cinepremiere.com.mx/wp-content/uploads/2024/01/monkey-man-pelicula-trailer-estreno-900x506.jpg"
+                class="card-img-top"
+                alt="Monkey Man: El Despertar de La Bestia"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Monkey Man: El Despertar de La Bestia
+                </h5>
+                <p class="card-text">121 min · Thriller, Acción</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="good-boy.html">
+              <img
+                src="https://imgmedia.larepublica.pe/640x371/larepublica/original/2023/08/24/64e81c533f1f8262ab613374.webp"
+                class="card-img-top"
+                alt="Good Boy: Hagas Lo Que Hagas No Lo Trates Como Humano"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Good Boy: Hagas Lo Que Hagas No Lo Trates Como Humano
+                </h5>
+                <p class="card-text">76 min · Terror, Suspenso</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="desafiantes.html">
+              <img
+                src="https://cinepremiere.com.mx/wp-content/uploads/2023/06/Desafiantes-2.jpg"
+                class="card-img-top"
+                alt="Desafiantes"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Desafiantes</h5>
+                <p class="card-text">131 min · Romance, Drama</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="profesion-peligro.html">
+              <img
+                src="https://m.cinesargentinos.com.ar/static/archivos/69922"
+                class="card-img-top"
+                alt="Profesión Peligro"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Profesión Peligro</h5>
+                <p class="card-text">126 min · Romance, Comedia, Acción</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="frida.html">
+              <img
+                src="https://i0.wp.com/www.micropsiacine.com/wp-content/uploads/2024/03/frida-4.jpg?fit=1077%2C606&ssl=1"
+                class="card-img-top"
+                alt="Frida"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Frida</h5>
+                <p class="card-text">87 min · Documental</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="el-hombre-de-los-suenos.html">
+              <img
+                src="https://img-tomatazos.buscafs.com/436913/436913_1047x600.jpg"
+                class="card-img-top"
+                alt="El Hombre de Los Sueños"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">El Hombre de Los Sueños</h5>
+                <p class="card-text">100 min · Comedia, Drama</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="guerra-civil.html">
+              <img
+                src="https://ap-cdn.sfo3.cdn.digitaloceanspaces.com/uploads/2024/04/civil-war-pelicula-kirsten-dunst.jpg"
+                class="card-img-top"
+                alt="Guerra Civil"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Guerra Civil</h5>
+                <p class="card-text">109 min · Acción</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="v-de-victor.html">
+              <img
+                src="https://palomaynacho-1f321.kxcdn.com/wp-content/uploads/2024/03/V-de-Victor-pelicula-mexicana-jpg.webp"
+                class="card-img-top"
+                alt="V de Victor"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">V de Victor</h5>
+                <p class="card-text">100 min · Comedia</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="jugaremos-en-el-bosque.html">
+              <img
+                src="https://palomaynacho-1f321.kxcdn.com/wp-content/uploads/2024/04/jugaremos-en-el-bosque-2-jpeg.webp"
+                class="card-img-top"
+                alt="Jugaremos En El Bosque"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jugaremos En El Bosque</h5>
+                <p class="card-text">96 min · Terror</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="back-to-black.html">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/amy-66597e04ccb3f.jpg?resize=980:*"
+                class="card-img-top"
+                alt="Back To Black"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Back To Black</h5>
+                <p class="card-text">122 min · Drama</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="plan-de-retiro.html">
+              <img
+                src="https://lt3.com.ar/wp-content/uploads/2024/02/Plan-de-retiro-2.jpg"
+                class="card-img-top"
+                alt="Plan de Retiro"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Plan de Retiro</h5>
+                <p class="card-text">127 min · Acción, Crimen, Comedia</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="garfield-fuera-de-casa.html">
+              <img
+                src="https://escribiendocine-s3.cdn.net.ar/s3i233/2024/05/escribiendocine/images/76/39/763974_5923d7179a5cdb4fd0fc18900a13fefae131434b8531dd3b7fd6a2c769af5858/lg.jpg"
+                class="card-img-top"
+                alt="Garfield: Fuera de Casa"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Garfield: Fuera de Casa</h5>
+                <p class="card-text">101 min · Comedia, Animación, Familiar</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="tarot-de-la-muerte.html">
+              <img
+                src="https://peru21.pe/resizer/v2/YAD66FE26FF3XPZUBLQRPEIMXU.PNG?auth=e81520a6349e5d2d92ab7670c521a679de2ba8d83e008aa3a98c6c0b79901458&width=580&height=330&quality=75&smart=true"
+                class="card-img-top"
+                alt="Tarot de La Muerte"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tarot de La Muerte</h5>
+                <p class="card-text">92 min · Terror</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="los-extranos-capitulo-1.html">
+              <img
+                src="https://elcomercio.pe/resizer/csZoC9cKozOxzrpWrtDP7JDcu7Y=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/DSOIGJVJPFHXXBBLFRRPPFDCJI.PNG"
+                class="card-img-top"
+                alt="Los Extraños: Capítulo 1"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Los Extraños: Capítulo 1</h5>
+                <p class="card-text">91 min · Suspenso, Terror</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Cards -->
+
+    <!-- Google Maps -->
+    <div class="container mt-5">
+      <h2>Encuentra tu cine más cercano</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.2807132206194!2d-99.88409802481023!3d16.86200271772776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca582cdddca6cb%3A0x4f6f0ba093dcf2ba!2sCin%C3%A9polis!5e0!3m2!1sen!2smx!4v1718291071148!5m2!1sen!2smx"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2055.883953684146!2d-99.8317847745807!3d16.900786326935204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca57232bc5bf09%3A0x3cc837f94c69938d!2sCin%C3%A9polis%20Renacimiento%20(C073)!5e0!3m2!1sen!2smx!4v1718291975265!5m2!1sen!2smx"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Google Maps -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start footer-custom">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">CINEPOLIS</h5>
+            <p>
+              CINEPOLIS es la cadena de cines más innovadora, ofreciendo una
+              experiencia cinematográfica única con la mejor tecnología y
+              comodidad. Nuestro objetivo es brindar el mejor entretenimiento a
+              nuestra audiencia.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Enlaces rápidos</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Cartelera</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Promociones</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Tiendas</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Síguenos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">Facebook</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Twitter</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Instagram</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 CINEPOLIS. Todos los derechos reservados. | Diseñado por un
+        estudiante de UNID.
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script type="module" src="./main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

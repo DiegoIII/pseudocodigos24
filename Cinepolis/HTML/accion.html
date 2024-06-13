@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Películas de Acción - CINEPOLIS</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .navbar-custom {
+        background-color: #05102a !important;
+        color: white !important;
+      }
+
+      .navbar-custom .nav-link {
+        color: white !important;
+      }
+
+      .navbar-custom .nav-link:hover {
+        color: #d1e7f7 !important;
+      }
+
+      .footer-custom {
+        background-color: #05102a !important;
+        color: white !important;
+      }
+
+      .footer-custom h5,
+      .footer-custom p,
+      .footer-custom a {
+        color: white !important;
+      }
+
+      .footer-custom a:hover {
+        color: #d1e7f7 !important;
+      }
+
+      .card {
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card-img-top {
+        object-fit: cover;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="index.html">CINEPOLIS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Películas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="accion.html">Acción</a></li>
+                <li>
+                  <a class="dropdown-item" href="comedia.html">Comedia</a>
+                </li>
+                <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                <li><a class="dropdown-item" href="terror.html">Terror</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Alimentos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tradicional</a></li>
+                <li><a class="dropdown-item" href="#">VIP</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Elige tu cine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="crear_cuenta.html">Crear cuenta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Movie Cards -->
+    <div class="container mt-5">
+      <h1 class="mb-4">Películas de Acción</h1>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="el-planeta-de-los-simios-nuevo-reino.html">
+              <img
+                src="https://www.blogdepelis.com/wp-content/uploads/2024/05/PLANETA1.jpg"
+                class="card-img-top"
+                alt="El Planeta de Los Simios: Nuevo Reino"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  El Planeta de Los Simios: Nuevo Reino
+                </h5>
+                <p class="card-text">
+                  145 min · Acción, Aventura, Ciencia Ficción
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="furiosa-saga-mad-max.html">
+              <img
+                src="https://www.lavanguardia.com/andro4all/hero/2024/05/furiosa-de-la-saga-mad-max.jpeg?width=1200&aspect_ratio=16:9"
+                class="card-img-top"
+                alt="Furiosa: De la Saga Mad Max"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Furiosa: De la Saga Mad Max</h5>
+                <p class="card-text">142 min · Acción, Aventura</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="sismo-magnitud-9-5.html">
+              <img
+                src="https://cinepolis.com/_next/image?url=https%3A%2F%2Ftickets-static-content.cinepolis.com%2Fresources%2Fmx%2Fmovies%2Fsismo-magnitud-95%2FPOSTER%2F720X1022%2Fsismo-magnitud-95.jpg&w=3840&q=75"
+                class="card-img-top"
+                alt="Sismo Magnitud 9.5"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sismo Magnitud 9.5</h5>
+                <p class="card-text">114 min · Acción</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <a href="profesion-peligro.html">
+              <img
+                src="https://m.cinesargentinos.com.ar/static/archivos/69922"
+                class="card-img-top"
+                alt="Profesión Peligro"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Profesión Peligro</h5>
+                <p class="card-text">126 min · Romance, Comedia, Acción</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Cards -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start footer-custom">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">CINEPOLIS</h5>
+            <p>
+              CINEPOLIS es la cadena de cines más innovadora, ofreciendo una
+              experiencia cinematográfica única con la mejor tecnología y
+              comodidad. Nuestro objetivo es brindar el mejor entretenimiento a
+              nuestra audiencia.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Enlaces rápidos</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Cartelera</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Promociones</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Tiendas</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Síguenos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">Facebook</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Twitter</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Instagram</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 CINEPOLIS. Todos los derechos reservados. | Diseñado por un
+        estudiante de UNID.
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script type="module" src="./main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
